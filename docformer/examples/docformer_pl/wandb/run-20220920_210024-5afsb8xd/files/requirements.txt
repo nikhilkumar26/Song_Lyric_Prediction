@@ -70,7 +70,7 @@ dill==0.3.4
 distributed==2021.11.2
 docker-pycreds==0.4.0
 docutils==0.15.2
-dparse==0.5.1
+dparse==0.5.2
 einops==0.4.1
 entrypoints==0.3
 environment-kernels==1.1.1
