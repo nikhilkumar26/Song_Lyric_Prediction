@@ -1,0 +1,123 @@
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_setup.py:_flush():68] Configure stats pid to 20840
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_setup.py:_flush():68] Loading settings from /home/ec2-user/.config/wandb/settings
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_setup.py:_flush():68] Loading settings from /home/ec2-user/docformer/examples/docformer_pl/wandb/settings
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_init.py:_log_setup():476] Logging user logs to /home/ec2-user/docformer/examples/docformer_pl/wandb/run-20220920_205921-3vqkrdix/logs/debug.log
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_init.py:_log_setup():477] Logging internal logs to /home/ec2-user/docformer/examples/docformer_pl/wandb/run-20220920_205921-3vqkrdix/logs/debug-internal.log
+2022-09-20 20:59:21,488 INFO    MainThread:20840 [wandb_init.py:init():516] calling init triggers
+2022-09-20 20:59:21,489 INFO    MainThread:20840 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'coordinate_size': 96, 'hidden_dropout_prob': 0.1, 'hidden_size': 768, 'image_feature_pool_shape': [7, 7, 256], 'intermediate_ff_size_factor': 4, 'max_2d_position_embeddings': 1024, 'max_position_embeddings': 128, 'max_relative_positions': 8, 'num_attention_heads': 12, 'num_hidden_layers': 12, 'pad_token_id': 0, 'shape_size': 96, 'vocab_size': 30522, 'layer_norm_eps': 1e-12}
+2022-09-20 20:59:21,489 INFO    MainThread:20840 [wandb_init.py:init():535] re-initializing run, found existing run on stack: 325yvw7n
+2022-09-20 20:59:21,490 INFO    MainThread:20840 [wandb_run.py:_finish():1720] finishing run shikhar02/RVL CDIP with DocFormer New Version/325yvw7n
+2022-09-20 20:59:21,490 INFO    MainThread:20840 [jupyter.py:save_history():448] not saving jupyter history
+2022-09-20 20:59:21,490 INFO    MainThread:20840 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-09-20 20:59:21,490 INFO    MainThread:20840 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-09-20 20:59:21,490 INFO    MainThread:20840 [wandb_run.py:_atexit_cleanup():1923] got exitcode: 0
+2022-09-20 20:59:21,490 INFO    MainThread:20840 [wandb_run.py:_restore():1906] restore
+2022-09-20 20:59:21,490 INFO    MainThread:20840 [wandb_run.py:_restore():1912] restore done
+2022-09-20 20:59:21,496 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 734
+  total_bytes: 734
+}
+
+2022-09-20 20:59:22,282 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 734
+  total_bytes: 734
+}
+
+2022-09-20 20:59:22,998 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 734
+  total_bytes: 18461
+}
+
+2022-09-20 20:59:23,100 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18461
+  total_bytes: 18461
+}
+
+2022-09-20 20:59:23,203 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18461
+  total_bytes: 18461
+}
+
+2022-09-20 20:59:23,304 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18461
+  total_bytes: 18461
+}
+
+2022-09-20 20:59:23,406 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18461
+  total_bytes: 18461
+}
+
+2022-09-20 20:59:23,507 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18461
+  total_bytes: 18461
+}
+
+2022-09-20 20:59:23,766 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18461
+  total_bytes: 18461
+}
+
+2022-09-20 20:59:23,965 INFO    MainThread:20840 [wandb_run.py:_on_finish():2224] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18461
+  total_bytes: 18461
+}
+local_info {
+}
+
+2022-09-20 20:59:25,070 INFO    MainThread:20840 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-20 20:59:25,070 INFO    MainThread:20840 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-20 20:59:25,072 INFO    MainThread:20840 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-09-20 20:59:25,075 INFO    MainThread:20840 [wandb_init.py:init():569] starting backend
+2022-09-20 20:59:25,076 INFO    MainThread:20840 [wandb_init.py:init():573] setting up manager
+2022-09-20 20:59:25,077 INFO    MainThread:20840 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-09-20 20:59:25,078 INFO    MainThread:20840 [wandb_init.py:init():580] backend started and connected
+2022-09-20 20:59:25,089 INFO    MainThread:20840 [wandb_run.py:_label_probe_notebook():1098] probe notebook
+2022-09-20 20:59:25,089 INFO    MainThread:20840 [wandb_run.py:_label_probe_notebook():1108] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-09-20 20:59:25,089 INFO    MainThread:20840 [wandb_init.py:init():658] updated telemetry
+2022-09-20 20:59:25,225 INFO    MainThread:20840 [wandb_init.py:init():692] communicating run to backend with 30 second timeout
+2022-09-20 20:59:26,203 INFO    MainThread:20840 [wandb_run.py:_on_init():1974] communicating current version
+2022-09-20 20:59:26,226 INFO    MainThread:20840 [wandb_run.py:_on_init():1978] got version response 
+2022-09-20 20:59:26,226 INFO    MainThread:20840 [wandb_init.py:init():727] starting run threads in backend
+2022-09-20 20:59:31,237 INFO    MainThread:20840 [wandb_run.py:_console_start():1954] atexit reg
+2022-09-20 20:59:31,237 INFO    MainThread:20840 [wandb_run.py:_redirect():1812] redirect: SettingsConsole.WRAP_RAW
+2022-09-20 20:59:31,237 INFO    MainThread:20840 [wandb_run.py:_redirect():1877] Wrapping output streams.
+2022-09-20 20:59:31,237 INFO    MainThread:20840 [wandb_run.py:_redirect():1899] Redirects installed.
+2022-09-20 20:59:31,238 INFO    MainThread:20840 [wandb_init.py:init():764] run started, returning control to user process
+2022-09-20 20:59:32,221 INFO    MainThread:20840 [wandb_run.py:_config_callback():1145] config_cb None None {'config/coordinate_size': 96, 'config/hidden_dropout_prob': 0.1, 'config/hidden_size': 768, 'config/image_feature_pool_shape': [7, 7, 256], 'config/intermediate_ff_size_factor': 4, 'config/max_2d_position_embeddings': 1024, 'config/max_position_embeddings': 128, 'config/max_relative_positions': 8, 'config/num_attention_heads': 12, 'config/num_hidden_layers': 12, 'config/pad_token_id': 0, 'config/shape_size': 96, 'config/vocab_size': 30522, 'config/layer_norm_eps': 1e-12, 'lr': 5e-05}

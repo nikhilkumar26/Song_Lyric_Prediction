@@ -1,0 +1,169 @@
+2022-09-20 20:02:56,928 INFO    MainThread:21315 [wandb_setup.py:_flush():68] Configure stats pid to 21315
+2022-09-20 20:02:56,928 INFO    MainThread:21315 [wandb_setup.py:_flush():68] Loading settings from /home/ec2-user/.config/wandb/settings
+2022-09-20 20:02:56,928 INFO    MainThread:21315 [wandb_setup.py:_flush():68] Loading settings from /home/ec2-user/docformer/examples/docformer_pl/wandb/settings
+2022-09-20 20:02:56,928 INFO    MainThread:21315 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-09-20 20:02:56,928 INFO    MainThread:21315 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-09-20 20:02:56,928 ERROR   MainThread:21315 [wandb_setup.py:_flush():68] error
+Traceback (most recent call last):
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1073, in init
+    wi.setup(kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 274, in setup
+    wandb_login._login(
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_login.py", line 298, in _login
+    wlogin.prompt_api_key()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_login.py", line 221, in prompt_api_key
+    key, status = self._prompt_api_key()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_login.py", line 201, in _prompt_api_key
+    key = apikey.prompt_api_key(
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/lib/apikey.py", line 134, in prompt_api_key
+    key = input_callback(api_ask).strip()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/click/termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/click/termui.py", line 150, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+2022-09-20 20:02:56,929 ERROR   MainThread:21315 [wandb_setup.py:_flush():68] error
+Traceback (most recent call last):
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1073, in init
+    wi.setup(kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 274, in setup
+    wandb_login._login(
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_login.py", line 298, in _login
+    wlogin.prompt_api_key()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_login.py", line 221, in prompt_api_key
+    key, status = self._prompt_api_key()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/wandb_login.py", line 201, in _prompt_api_key
+    key = apikey.prompt_api_key(
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/wandb/sdk/lib/apikey.py", line 134, in prompt_api_key
+    key = input_callback(api_ask).strip()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/click/termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/click/termui.py", line 150, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+2022-09-20 20:02:56,929 INFO    MainThread:21315 [wandb_setup.py:_flush():68] Applying login settings: {'api_key': '***REDACTED***'}
+2022-09-20 20:02:56,929 INFO    MainThread:21315 [wandb_init.py:_log_setup():476] Logging user logs to /home/ec2-user/docformer/examples/docformer_pl/wandb/run-20220920_200256-2s8lqtvx/logs/debug.log
+2022-09-20 20:02:56,929 INFO    MainThread:21315 [wandb_init.py:_log_setup():477] Logging internal logs to /home/ec2-user/docformer/examples/docformer_pl/wandb/run-20220920_200256-2s8lqtvx/logs/debug-internal.log
+2022-09-20 20:02:56,929 INFO    MainThread:21315 [wandb_init.py:init():516] calling init triggers
+2022-09-20 20:02:56,929 INFO    MainThread:21315 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'coordinate_size': 96, 'hidden_dropout_prob': 0.1, 'hidden_size': 768, 'image_feature_pool_shape': [7, 7, 256], 'intermediate_ff_size_factor': 4, 'max_2d_position_embeddings': 1024, 'max_position_embeddings': 128, 'max_relative_positions': 8, 'num_attention_heads': 12, 'num_hidden_layers': 12, 'pad_token_id': 0, 'shape_size': 96, 'vocab_size': 30522, 'layer_norm_eps': 1e-12}
+2022-09-20 20:02:56,929 INFO    MainThread:21315 [wandb_init.py:init():535] re-initializing run, found existing run on stack: mn9d2suf
+2022-09-20 20:02:56,931 INFO    MainThread:21315 [wandb_run.py:_finish():1720] finishing run shikhar02/RVL CDIP with DocFormer New Version/mn9d2suf
+2022-09-20 20:02:56,931 INFO    MainThread:21315 [jupyter.py:save_history():448] not saving jupyter history
+2022-09-20 20:02:56,931 INFO    MainThread:21315 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-09-20 20:02:56,931 INFO    MainThread:21315 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-09-20 20:02:56,931 INFO    MainThread:21315 [wandb_run.py:_atexit_cleanup():1923] got exitcode: 0
+2022-09-20 20:02:56,931 INFO    MainThread:21315 [wandb_run.py:_restore():1906] restore
+2022-09-20 20:02:56,931 INFO    MainThread:21315 [wandb_run.py:_restore():1912] restore done
+2022-09-20 20:02:56,937 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 734
+  total_bytes: 734
+}
+
+2022-09-20 20:02:57,066 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 734
+  total_bytes: 734
+}
+
+2022-09-20 20:02:59,992 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 734
+  total_bytes: 734
+}
+
+2022-09-20 20:03:00,820 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 734
+  total_bytes: 15936
+}
+
+2022-09-20 20:03:00,923 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 15936
+  total_bytes: 15936
+}
+
+2022-09-20 20:03:01,025 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 15936
+  total_bytes: 15936
+}
+
+2022-09-20 20:03:01,127 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 15936
+  total_bytes: 15936
+}
+
+2022-09-20 20:03:01,228 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 15936
+  total_bytes: 15936
+}
+
+2022-09-20 20:03:01,330 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 15936
+  total_bytes: 15936
+}
+
+2022-09-20 20:03:01,562 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 15936
+  total_bytes: 15936
+}
+
+2022-09-20 20:03:01,765 INFO    MainThread:21315 [wandb_run.py:_on_finish():2224] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 15936
+  total_bytes: 15936
+}
+local_info {
+}
+
+2022-09-20 20:03:02,870 INFO    MainThread:21315 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-20 20:03:02,870 INFO    MainThread:21315 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-20 20:03:02,872 INFO    MainThread:21315 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-09-20 20:03:02,875 INFO    MainThread:21315 [wandb_init.py:init():569] starting backend
+2022-09-20 20:03:02,876 INFO    MainThread:21315 [wandb_init.py:init():573] setting up manager
+2022-09-20 20:03:02,877 INFO    MainThread:21315 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-09-20 20:03:02,878 INFO    MainThread:21315 [wandb_init.py:init():580] backend started and connected
+2022-09-20 20:03:02,891 INFO    MainThread:21315 [wandb_run.py:_label_probe_notebook():1098] probe notebook
+2022-09-20 20:03:02,891 INFO    MainThread:21315 [wandb_run.py:_label_probe_notebook():1108] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-09-20 20:03:02,891 INFO    MainThread:21315 [wandb_init.py:init():658] updated telemetry
+2022-09-20 20:03:03,133 INFO    MainThread:21315 [wandb_init.py:init():692] communicating run to backend with 30 second timeout
+2022-09-20 20:03:04,010 INFO    MainThread:21315 [wandb_run.py:_on_init():1974] communicating current version
+2022-09-20 20:03:04,048 INFO    MainThread:21315 [wandb_run.py:_on_init():1978] got version response 
+2022-09-20 20:03:04,048 INFO    MainThread:21315 [wandb_init.py:init():727] starting run threads in backend
+2022-09-20 20:03:09,060 INFO    MainThread:21315 [wandb_run.py:_console_start():1954] atexit reg
+2022-09-20 20:03:09,060 INFO    MainThread:21315 [wandb_run.py:_redirect():1812] redirect: SettingsConsole.WRAP_RAW
+2022-09-20 20:03:09,060 INFO    MainThread:21315 [wandb_run.py:_redirect():1877] Wrapping output streams.
+2022-09-20 20:03:09,061 INFO    MainThread:21315 [wandb_run.py:_redirect():1899] Redirects installed.
+2022-09-20 20:03:09,061 INFO    MainThread:21315 [wandb_init.py:init():764] run started, returning control to user process

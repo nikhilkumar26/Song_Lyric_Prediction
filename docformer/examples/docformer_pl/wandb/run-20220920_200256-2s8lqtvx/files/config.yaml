@@ -1,0 +1,87 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.3
+    framework: huggingface
+    huggingface_version: 4.22.1
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.8.12
+    start_time: 1663704182.87838
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 11
+      - 40
+      - 41
+      - 49
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 9
+      - 11
+      - 40
+      - 41
+      - 49
+      - 53
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.8.12
+      5: 0.13.3
+      6: 4.22.1
+      8:
+      - 1
+      - 5
+coordinate_size:
+  desc: null
+  value: 96
+hidden_dropout_prob:
+  desc: null
+  value: 0.1
+hidden_size:
+  desc: null
+  value: 768
+image_feature_pool_shape:
+  desc: null
+  value:
+  - 7
+  - 7
+  - 256
+intermediate_ff_size_factor:
+  desc: null
+  value: 4
+layer_norm_eps:
+  desc: null
+  value: 1.0e-12
+max_2d_position_embeddings:
+  desc: null
+  value: 1024
+max_position_embeddings:
+  desc: null
+  value: 128
+max_relative_positions:
+  desc: null
+  value: 8
+num_attention_heads:
+  desc: null
+  value: 12
+num_hidden_layers:
+  desc: null
+  value: 12
+pad_token_id:
+  desc: null
+  value: 0
+shape_size:
+  desc: null
+  value: 96
+vocab_size:
+  desc: null
+  value: 30522

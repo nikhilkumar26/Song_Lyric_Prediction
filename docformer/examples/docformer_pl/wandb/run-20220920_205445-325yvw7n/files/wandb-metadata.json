@@ -1,0 +1,23 @@
+{
+    "os": "Linux-4.14.256-197.484.amzn2.x86_64-x86_64-with-glibc2.10",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-09-20T20:54:45.985492",
+    "startedAt": "2022-09-20T20:54:45.683443",
+    "docker": null,
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": "11.0.228",
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/shabie/docformer.git",
+        "commit": "74d248d51dc1b89086bbd10dc595be67a9c7cd9f"
+    },
+    "email": null,
+    "root": "/home/ec2-user/docformer",
+    "host": "ip-172-12-0-14.ec2.internal",
+    "username": "ec2-user",
+    "executable": "/home/ec2-user/anaconda3/envs/pytorch_p38/bin/python"
+}

@@ -1,0 +1,38 @@
+Global seed set to 42
+/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:447: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name                   | Type                       | Params
+----------------------------------------------------------------------
+0 | docformer              | DocFormerForClassification | 174 M
+1 | train_accuracy_metric  | Accuracy                   | 0
+2 | val_accuracy_metric    | Accuracy                   | 0
+3 | f1_metric              | F1Score                    | 0
+4 | precision_macro_metric | Precision                  | 0
+5 | recall_macro_metric    | Recall                     | 0
+6 | precision_micro_metric | Precision                  | 0
+7 | recall_micro_metric    | Recall                     | 0
+----------------------------------------------------------------------
+150 M     Trainable params
+23.4 M    Non-trainable params
+174 M     Total params
+697.173   Total estimated model params size (MB)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 5] Input/output error
+Call stack:
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/ipykernel/parentpoller.py", line 34, in run
+    get_logger().warning("Parent appears to have exited, shutting down.")
+Message: 'Parent appears to have exited, shutting down.'

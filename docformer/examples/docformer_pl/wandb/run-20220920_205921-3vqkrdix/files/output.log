@@ -1,0 +1,100 @@
+Global seed set to 42
+/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:447: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name                   | Type                       | Params
+----------------------------------------------------------------------
+0 | docformer              | DocFormerForClassification | 174 M
+1 | train_accuracy_metric  | Accuracy                   | 0
+2 | val_accuracy_metric    | Accuracy                   | 0
+3 | f1_metric              | F1Score                    | 0
+4 | precision_macro_metric | Precision                  | 0
+5 | recall_macro_metric    | Recall                     | 0
+6 | precision_micro_metric | Precision                  | 0
+7 | recall_micro_metric    | Recall                     | 0
+----------------------------------------------------------------------
+150 M     Trainable params
+23.4 M    Non-trainable params
+174 M     Total params
+697.173   Total estimated model params size (MB)
+ERROR:root:Internal Python error in the inspect module.
+Below is the traceback from this internal error.
+Traceback (most recent call last):
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 403, in get_tesseract_version
+    assert version >= TESSERACT_MIN_VERSION
+AssertionError
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 3457, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_20840/3832242952.py", line 2, in <module>
+    main()
+  File "/tmp/ipykernel_20840/3899709816.py", line 29, in main
+    trainer.fit(docformer, datamodule)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 696, in fit
+    self._call_and_handle_interrupt(
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 735, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1166, in _run
+    results = self._run_stage()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1252, in _run_stage
+    return self._run_train()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1274, in _run_train
+    self._run_sanity_check()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1343, in _run_sanity_check
+    val_loop.run()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 155, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 127, in advance
+    batch = next(data_fetcher)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/utilities/fetching.py", line 184, in __next__
+    return self.fetching_function()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/utilities/fetching.py", line 263, in fetching_function
+    self._fetch_next_batch(self.dataloader_iter)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytorch_lightning/utilities/fetching.py", line 277, in _fetch_next_batch
+    batch = next(iterator)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/tmp/ipykernel_20840/4030446968.py", line 22, in __getitem__
+    final_encoding = create_features(
+  File "/home/ec2-user/docformer/src/docformer/dataset.py", line 195, in create_features
+    entries = apply_ocr(image)
+  File "/home/ec2-user/docformer/src/docformer/dataset.py", line 52, in apply_ocr
+    ocr_df = pytesseract.image_to_data(image, output_type="data.frame")
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 521, in image_to_data
+    if get_tesseract_version() < TESSERACT_MIN_VERSION:
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 146, in wrapper
+    wrapper._result = func(*args, **kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 405, in get_tesseract_version
+    raise SystemExit(f'Invalid tesseract version: "{raw_version}"')
+SystemExit: Invalid tesseract version: "tesseract 3.04.00
+ leptonica-1.72
+  libgif 4.1.6(?) : libjpeg 6b (libjpeg-turbo 1.2.90) : libpng 1.5.13 : libtiff 4.0.3 : zlib 1.2.7 : libwebp 0.3.0
+"
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/IPython/core/ultratb.py", line 1101, in get_records
+    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/IPython/core/ultratb.py", line 248, in wrapped
+    return f(*args, **kwargs)
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/IPython/core/ultratb.py", line 281, in _fixed_getinnerframes
+    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
+  File "/home/ec2-user/anaconda3/envs/pytorch_p38/lib/python3.8/inspect.py", line 1515, in getinnerframes
+    frameinfo = (tb.tb_frame,) + getframeinfo(tb, context)
+AttributeError: 'tuple' object has no attribute 'tb_frame'
