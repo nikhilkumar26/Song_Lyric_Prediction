@@ -26,7 +26,7 @@ gTTS-token==1.1.3
 h5py @ file:///tmp/build/80754af9/h5py_1593454122442/work
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 ipykernel==5.3.4
-ipython==7.16.1
+ipython==7.16.3
 ipython-genutils==0.2.0
 ipywidgets==7.5.1
 jedi==0.17.2
