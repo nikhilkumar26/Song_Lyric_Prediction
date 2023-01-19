@@ -86,7 +86,7 @@ flask==2.0.2
 fonttools==4.28.2
 frozenlist==1.2.0
 fsspec==2022.8.2
-future==0.18.2
+future==0.18.3
 gevent==21.8.0
 gitdb==4.0.9
 gitpython==3.1.27
