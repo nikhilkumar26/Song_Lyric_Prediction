@@ -184,7 +184,7 @@ numpy==1.18.5
 numpydoc==1.1.0
 oauthlib==3.2.1
 olefile==0.46
-onnx==1.10.2
+onnx==1.13.0
 opencv-python==4.5.1.48
 openpyxl==3.0.9
 packaging==21.3
